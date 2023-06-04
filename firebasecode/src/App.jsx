@@ -1,13 +1,13 @@
-import React from 'react';
-import TaskManager from './TaskManager';
+import 'App.css';
+import TodoList from './components/Todolist.jsx';
 
-const App = () => {
+
+function App() {
   return (
-    <div>
-      <h1>Uppgiftshantering</h1>
-      <TaskManager />
+    <div className="App">
+      <TodoList/>
     </div>
   );
-};
+}
 
 export default App;

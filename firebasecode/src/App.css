@@ -1,42 +1,116 @@
+/* Center the to-do list on the page */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Style the h1 */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the form */
+form {
+  display: flex;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+label {
+  font-size: 1.2rem;
+  margin-right: 1rem;
 }
 
-.card {
-  padding: 2em;
+input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-right: 1rem;
 }
 
-.read-the-docs {
-  color: #888;
+button[type="submit"] {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #5bc9e3;
+}
+
+/* Style the to-do list items */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+
+
+button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: black
+}
+
+button:hover {
+  background-color: #5bc9e3;
+}
+
+input[type="text"] {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 3px #2196f3;
+}
+
+body {
+  background-color: #4587bc;
+}
+
+div {
+  color: #333; 
 }
